@@ -4,8 +4,8 @@
 There is a test application "hrapp2". It can be opened by JDeveloper 12c
 
 ```
-$ git clone 
-$ cd 
+$ git clone https://github.com/dyangcht/wls-sharing.git
+$ cd wls-sharing
 $ cp hrapp2/deploy/hrapp2.ear domain-home-in-image/docker-images/OracleWebLogic/samples/12213-deploy-application
 $ cd domain-home-in-image/docker-images/OracleWebLogic/samples/12213-deploy-application
 $ rm -f archive.zip
