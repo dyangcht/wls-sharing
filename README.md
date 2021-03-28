@@ -11,14 +11,12 @@ $ oc apply -f db.yaml
 $ cd ..
 ```
 
+### Archiving the application
 ```
 $ git clone https://github.com/dyangcht/wls-sharing.git
 $ cd wls-sharing
 $ cp hrapp2/deploy/hrapp2.ear domain-home-in-image/docker-images/OracleWebLogic/samples/12213-deploy-application
 $ cd domain-home-in-image/docker-images/OracleWebLogic/samples/12213-deploy-application
-```
-### Archiving the application
-```
 $ rm -f archive.zip
 $ jar -cvf archive.zip hrapp2.ear
 ```
