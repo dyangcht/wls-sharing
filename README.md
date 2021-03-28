@@ -7,6 +7,12 @@ There is a test application "hrapp2". It can be opened by JDeveloper 12c
 ```
 $ cd domain-home-in-image
 $ oc new-project database-namespace
+$ kubectl create secret docker-registry regsecret \
+        --docker-server=container-registry.oracle.com \
+        --docker-username=yangorcl@gmail.com \
+        --docker-password='PASSWORD' \
+        --docker-email=yangorcl@gmail.com \
+        -n database-namespace
 $ oc apply -f db.yaml
 $ cd ..
 ```
