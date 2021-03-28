@@ -3,6 +3,14 @@
 ### Testing application
 There is a test application "hrapp2". It can be opened by JDeveloper 12c
 
+### Deploy Oracle Database to OCP
+```
+$ cd domain-home-in-image
+$ oc new-project database-namespace
+$ oc apply -f db.yaml
+$ cd ..
+```
+
 ```
 $ git clone https://github.com/dyangcht/wls-sharing.git
 $ cd wls-sharing
