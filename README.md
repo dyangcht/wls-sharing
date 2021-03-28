@@ -33,3 +33,9 @@ $ cd ../../../../
 $ oc delete -f outputs/weblogic-domains/sample-domain1/domain.yaml
 $ oc apply -f outputs/weblogic-domains/sample-domain1/domain.yaml
 ```
+
+### Regenerate the domain file
+```
+$ ./create-domain.sh -i my-inputs.yaml -u weblogic -p welcome1 -o outputs
+```
+Then you can check the file `outputs/weblogic-domains/sample-domain1/domain.yaml` you created
