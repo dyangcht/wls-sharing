@@ -38,7 +38,7 @@ $ oc apply -f outputs/weblogic-domains/sample-domain1/domain.yaml
 ```
 $ ./create-domain.sh -i my-inputs.yaml -u weblogic -p welcome1 -o outputs
 ```
-Then you can check the file `outputs/weblogic-domains/sample-domain1/domain.yaml` you created
+Then you can check the file `outputs/weblogic-domains/sample-domain1/domain.yaml` you created. The user name and password have to match to the following credential.
 
 ### Create a credentials for WebLogic Console Admin
 ```
