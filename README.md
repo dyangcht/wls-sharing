@@ -39,3 +39,10 @@ $ oc apply -f outputs/weblogic-domains/sample-domain1/domain.yaml
 $ ./create-domain.sh -i my-inputs.yaml -u weblogic -p welcome1 -o outputs
 ```
 Then you can check the file `outputs/weblogic-domains/sample-domain1/domain.yaml` you created
+
+### Create a credentials for WebLogic Console Admin
+```
+$ create-weblogic-credentials.sh -u weblogic -p welcome1 -n sample-domain1-ns -d sample-domain1
+``
+It creates a secret called "sample-domain1-weblogic-credentials". You can check the name "webLogicCredentialsSecret" in the domain.yaml
+
