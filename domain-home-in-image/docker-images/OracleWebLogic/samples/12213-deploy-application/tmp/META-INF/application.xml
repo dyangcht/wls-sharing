@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_5.xsd"
+             xmlns="http://java.sun.com/xml/ns/javaee" version="5">
+  <module>
+    <web>
+      <web-uri>
+        hrapp2_ViewController_webapp.war
+      </web-uri>
+      <context-root>
+        hrapp2
+      </context-root>
+    </web>
+  </module>
+</application>
