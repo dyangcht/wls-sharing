@@ -8,10 +8,21 @@ $ git clone https://github.com/dyangcht/wls-sharing.git
 $ cd wls-sharing
 $ cp hrapp2/deploy/hrapp2.ear domain-home-in-image/docker-images/OracleWebLogic/samples/12213-deploy-application
 $ cd domain-home-in-image/docker-images/OracleWebLogic/samples/12213-deploy-application
+```
+### Archiving the application
+```
 $ rm -f archive.zip
 $ jar -cvf archive.zip hrapp2.ear
+```
+
+### Gnereate the container image
+```
 $ docker build --build-arg APPLICATION_NAME=hrapp2 --build-arg APPLICATION_PKG=archive.zip -t dyangcht/12213-domain-with-app:v1.1 .
 $ docker push dyangcht/12213-domain-with-app:v1.1
+```
+
+### Redeploy the domain to OCP
+```
 $ cd ../../../../
 $ oc delete -f outputs/weblogic-domains/sample-domain1/domain.yaml
 $ oc apply -f outputs/weblogic-domains/sample-domain1/domain.yaml
