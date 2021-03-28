@@ -46,3 +46,7 @@ $ create-weblogic-credentials.sh -u weblogic -p welcome1 -n sample-domain1-ns -d
 ```
 It creates a secret called "sample-domain1-weblogic-credentials". You can check the name `webLogicCredentialsSecret` in the domain.yaml
 
+
+
+
+`Reference: `https://oracle.github.io/weblogic-kubernetes-operator/ <br>
